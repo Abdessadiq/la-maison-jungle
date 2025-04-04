@@ -1,14 +1,20 @@
+import '../styles/Cart.css'
+
 function Cart() {
-  let priceOne = 8;
-  let priceTwo = 10;
-  let priceTree = 15;
-  return (
-    <ul>
-      <li>un monstera : {priceOne}</li>
-      <li>un lierre : {priceTwo}</li>
-      <li>un bouquet de fleurs : {priceTree}</li>
-      <li>Total : {priceOne + priceTwo + priceTree}</li>
-    </ul>
-  );
+	const monsteraPrice = 8
+	const ivyPrice = 10
+	const flowerPrice = 15
+	return (
+		<div className='lmj-cart'>
+			<h2>Panier</h2>
+			<ul>
+				<li>Monstera : {monsteraPrice}€</li>
+				<li>Lierre : {ivyPrice}€</li>
+				<li>Fleurs : {flowerPrice}€</li>
+			</ul>
+			Total : {monsteraPrice + ivyPrice + flowerPrice}€
+		</div>
+	)
 }
-export default Cart;
+
+export default Cart
